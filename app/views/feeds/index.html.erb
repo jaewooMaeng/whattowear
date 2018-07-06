@@ -1,0 +1,26 @@
+<h1>뭐입지 Main</h1>
+<div>
+    <a href='/feeds/new'> 새로운 게시글 생성 </a> 
+</div>
+<div>
+    <a href='/board'> 게시판 </a> 
+</div>
+<div>
+    <a href='/feeds/mycloset'> 옷장 </a> 
+</div>
+<div>
+    <a href='/feeds/studiostreet'> Studio 둘러보기 </a> 
+</div>
+<div>
+    <a href='/feeds/editor'> 에디터 신청 </a> 
+</div>
+<div>
+    <a href='/feeds/qna'> Q&A </a> 
+</div>
+
+<% @feeds.each do |f| %>
+    <div style='border: 1px solid black;'>
+        <div><%= f.title %></div>
+        <div><%= f.content %></div>
+    </div>
+<% end %>
